@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4B4847;
+    align-items: center;  
+    width : 100%;
+    height :8vh; 
+}
+
+h1{
+    color:white;
+    padding:20px;
+    font-size: 30px;  
+    font-family: sans-serif; 
+}
+
+
+.mainSection{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.outer{
+    width:13vw;
+    height:88vh;
+    background-color: #908886;
+}
+.middle{
+    width:74vw;
+    height: 88vh;
+}
+#Empty{
+    width:10vw;
+    height: 83vh;
+    margin-top: 3vh;
+    margin-left: 2vh;
+    border:1px solid black;
+    background-color: rgb(100, 188, 188);
+}
+
+.footerSection{
+    width : 100vw;
+    height: 4vh;
+    background-color: #4B4847;
+}
+
+.middle-container{
+    display:flex;
+    flex-direction: column;
+    
+}
+.row-1{
+    display: flex;
+    justify-content:space-around;
+    background-color:rgb(100, 188, 188) ;
+    margin: 1.2% 3% 1%;
+    padding:2%;
+    gap:2%;
+    border: 1px solid black;
+
+}
+.last{
+    margin: 0.2% 3% 0%;
+    background-color: rgb(100, 188, 188);
+    padding: 5px;
+}
+
+.Link{
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 1.0% 2%;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+.row-3{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.row-3 button {
+    width:15%;
+    padding:5px 20px;
+    
+}
+.main-assignment{
+    background-color:#4B4847 ;
+    margin: 0% 3% 0% 3%;
+    padding:1%;
+    text-align: center;
+    color: aqua;
+    font-size: 20px;
+    border:1px solid black;
+}
+
+.square{
+    width:16vw;
+    height:16vh;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.image-container{
+    margin: 0% 3% 0% 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    border:1px solid black;
+    
+    
+}
+.image-content{
+    border:1px solid black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(100, 188, 188);
+    width:40%;
+    
+
+}
+img{
+    padding: 20px;
+    width:90%;
+    overflow: auto;
+    
+    
+}
+.searchBar{
+    background-color: aliceblue;
+    border: 0;
+    height: 75%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    align-content: center;
+    
+}
+.sbox{
+    border: 0;
+}
+.btn{
+    height: 100%;
+    width:80%;
+    background-color: rgb(100, 188, 188);
+    border-radius: 0px 10px 10px 0px;
+    
+    color: aliceblue;
+    
+}
+

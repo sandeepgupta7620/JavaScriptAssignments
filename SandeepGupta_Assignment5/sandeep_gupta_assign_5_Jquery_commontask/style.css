@@ -1,0 +1,82 @@
+table{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    border:1px solid black;
+    width: 100px;
+}
+
+#h-1{
+    background-color: rgb(164, 164, 209);
+    padding: 10px;
+    cursor: pointer;
+    color: brown;
+    border: 1px solid black;
+}
+
+
+
+.double-click{
+    background-color: rgb(157, 157, 223);
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+.doubled-clicked{
+    background-color: rosybrown;
+    color: aqua;
+}
+
+#changebg{
+    background-color: rgb(83, 195, 154);
+    padding:10px;
+    cursor: pointer;
+}
+
+#append-span{
+    background-color: rgb(157, 157, 223);
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#wrap-p-tag{
+    background-color: rgb(52, 52, 76);
+    color: rgb(235, 225, 225);
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    
+
+}
+.wrapper-class{
+    background-color: rosybrown;
+    color: aqua;
+    display: flex;
+    padding-bottom:15px;
+    
+}
+#box-mod-1{
+    display:block;
+    padding: 10px;
+    background-color: aqua;
+    cursor: pointer;
+    margin:10px;
+}
+.boxmodelproperties{
+    background-color: orange;
+    border: 1px solid black;
+    
+    margin-bottom:20px;
+    display: none;
+    
+}
+
+.row{
+    background-color: rgb(224, 70, 70);
+    color:black;
+}

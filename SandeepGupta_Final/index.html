@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SandeepGupta_Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header id="Header">
+            <img src="Images/final_logo.png" alt="Logo" id="final-logo">
+            <div id="head-2">
+                <div class="part">
+                    <p class="cont">365 516 6248</p>
+                    <p class="cont">149 Gaugh ST</p>
+                    <p class="cont">San Fransisco, CA 94102</p>      
+                </div>
+                <div class="part">
+                    <p class="cont">My Account</p>
+                    <p class="cont">Wish List (0)</p>
+                    <p class="cont">Order History</p>
+                    <p class="cont">Returns</p>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <a href="newarrival.html" class="nav-links">NEW ARRIVALS</a>
+            <a href="products.html" class="nav-links">PRODUCTS</a>
+            <a href="Ourstory.html" class="nav-links">OUR STORY</a>
+            <a href="articles.html" class="nav-links">ARTICLES</a>
+            <a href="contact.html" class="nav-links">CONTACT</a>
+        </nav>
+    </div>
+
+    <div id="row-2">
+        <div class="con">
+            <input type="checkbox" id="ship-info"  >
+            <h6 class="nav-content">SHIPPING INFO</h6>
+        </div>
+        <div class="con">
+            <input type="checkbox" id="payment-info">
+            <h6 class="nav-content">PAYMENT INFO</h6>
+        </div>
+        <div class="con">
+            <input type="checkbox" id="review-order">
+            <h6 class="nav-content">REVIEW ORDER</h6>
+        </div>
+    </div>
+
+    <div class="page" id="page-1">
+        <div class="form-container" id="form-container-1">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" max="30">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" max="30">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country">
+                    </div>
+                    <div class="form-group">
+                        <label for="towncity">Town/city</label>
+                        <input type="text" id="towncity" name="towncity">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" oninput="updateContent()">
+                    </div>
+                    <div class="form-group">
+                        <label for="pincode">Pin-code</label>
+                        <input type="number" id="pincode" name="pincode" min="5" max="6">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" oninput="updateState()">
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode">Zip-code</label>
+                        <input type="number" id="zipcode" name="zipcode" min="5" max="6">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" oninput="updatePhone()" required>
+                    </div>
+                </div>
+                
+            </form>
+            <div class="cb-row">
+                <div class="first-part">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">My shipping and billing information are the same.</label>
+                </div>
+                <div class="second-part">
+                    <button type="button" id="continue">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="page-2">
+        <div class="form-container" id="form-container-2">
+            <form>
+                <div class="form-row">
+                    <div class="form-group form-group-2">
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">
+                            <img class="pay-image" src="Images/visa.png" alt="Visa Electron">
+                            <img class="pay-image" src="Images/mastercard.png" alt="MasterCard">
+                            <img class="pay-image" src="Images/maestro.png" alt="Maestro">
+                        </label>
+                    </div>
+                    <div class="form-group form-group-2">
+                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <label for="paypal">
+                            <img class="pay-image" src="Images/paypal.png" alt="PayPal">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card-number">Card - Number</label>
+                        <input type="text" id="card-number" name="card-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="name-on-card">Name-on-card</label>
+                        <input type="text" id="name-on-card" name="name-on-card">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date (MM/YY)</label>
+                        <input type="text" id="expiry-date" name="expiry-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">Cvv</label>
+                        <input type="number" id="cvv" name="cvv" placeholder="Enter number">
+                    </div>
+                </div>
+                <div class="form-row form-row-2">
+                    <button type="button" id="place-order" >Place Your Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="page" id="page-3">
+        <div class="form-container" id="form-container-3">
+            <form>
+                <div class="form-row form-row-3">
+                    <div class="form-group">
+                        <label for="order-number">Order Number 74191</label>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="order-date">Order Date : 29.10.2013</label>
+                        
+                    </div>
+                </div>
+                <div class="form-row form-row-3">
+                    <div class="form-group">
+                        <h3 class="p3-head">SHIPPING INFORMATION</h3>
+                        <h5 class="p3-cont" id="ship-add">455 Jarkspur Dr</h5>
+                        <h5 class="p3-cont" id="ship-add-2">San Jose CA</h5>
+                        <h5 class="p3-cont" id="ship-add-3">92926-4601</h5>
+                                            
+                                            
+                        
+                    </div>
+                    <div class="form-group">
+                        <h3 class="p3-head">ORDER INFORMATION</h3>
+                        <h5 class="p3-cont">455 Jarkspur Dr <br>
+                                            San Jose CA 
+                        </h5>
+                    </div>
+                </div>
+                <div class="form-row form-row-3">
+                    <div class="form-group">
+                        <h3 class="p3-head">PRODUCT</h3>
+                        <h5 class="p3-cont">SVELIK(King/Queens)X1<br>
+                                            Jikininki( Armchairs & Sofa)X2
+                        </h5>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row form-row-4">
+                            <div class="form-group">
+                                <h3 class="p3-head">PRICE</h3>
+                                <h5 class="p3-cont">2500.00$<br>
+                                                    900.00$
+                                                    
+                                </h5>
+                            </div>
+                            <div class="form-group">
+                                <h3 class="p3-head">STATUS</h3>
+                                <h5 class="p3-cont" id="p3-cont-orange">on-hold <br>
+                                                    on-hold
+                                                    
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row form-row-5">
+                    <button onclick="printcontent()" type="button" id="place-order" class="print-order" style="font-size: 20px; border:2px solid skyblue;">Print Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <div class="col">
+                <div class="footer-head">SEARCH</div>
+                <div id="search-inner">
+                    <input type="text" placeholder="Search" id="searchbar">
+                    <img src="Images/search.png" alt="search-icon" id="searchicon">
+                </div>
+                <img src="Images/footer-1.png" alt="Footer-1" class="footer1">
+                
+            </div>
+            <div class="col">
+                <div class="footer-head">PRODUCTS</div>
+                <p class="foot-content">Armchairs & Sofa</p>
+                <p class="foot-content">Office Chairs</p>
+                <p class="foot-content">BedsLiving room storage</p>
+                <p class="foot-content">Living room storage</p>
+                <p class="foot-content">Tv and media furniture</p>
+            </div>
+            <div class="col">
+                <div class="footer-head">SITEMAP</div>
+                <div class="inner-content">
+                    <div>
+                        <p class="foot-content">New arrivals</p>
+                        <p class="foot-content">Products</p>
+                        <p class="foot-content">Our Story</p>
+                        <p class="foot-content">Articles</p>
+                        <p class="foot-content">Contacts</p>
+                    </div>
+                
+                    <div>
+                        <p class="foot-content">FAQ</p>
+                        <p class="foot-content">Terms of Use</p>
+                        <p class="foot-content">Affiliates</p>
+                        <p class="foot-content">Privacy and Security</p>
+                        <p class="foot-content">Returns</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-head">PAYMENT & SHIPPING</div>
+                <img src="Images/footer-2.png" alt="Footer-1" class="footer2">
+
+            </div>
+    </div>
+    </footer>
+
+
+    <div class="last">
+        <p class="last-content">© 2013 TRENDY ROOM. ALL RIGHTS RESERVED</p> 
+        <p class="last-content">DESIGNED BY MUNFACTORY</p>
+      </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+  
+
+</body>
+</html>
